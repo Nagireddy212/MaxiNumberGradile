@@ -1,2 +1,2 @@
 Bridgelabz/FindMaxNumberTest.java
- bridgelabz.FindMaxNumberTest
+ Bridgelabz.FindMaxNumberTest
