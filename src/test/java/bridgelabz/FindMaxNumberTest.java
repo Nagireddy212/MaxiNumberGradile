@@ -7,74 +7,67 @@ public class FindMaxNumberTest {
 
     @Test
     public void FirstNumberIsMax_ReturnSame() {
-        FindMaxNumber<Integer> integerFindMaxNumbers = new FindMaxNumber<Integer>();
-        Integer result = integerFindMaxNumbers.Maxtest(34, 32, 23);
+        FindMaxNumber<Integer>integerFindMaxNumber= new FindMaxNumber<Integer>(35,33,32);
+        Integer result = integerFindMaxNumber.Maxtest();
         Assertions.assertEquals(34, result);
-        integerFindMaxNumbers.printMax();
     }
 
     @Test
     public void SecondNumberIsMax_ReturnSame() {
-        FindMaxNumber<Integer>integerFindMaxNumbers = new FindMaxNumber<Integer>();
-        Integer result = integerFindMaxNumbers.Maxtest(33, 34, 32);
+        FindMaxNumber<Integer>integerFindMaxNumber= new FindMaxNumber<Integer>(33,35,32);
+        Integer result = integerFindMaxNumber.Maxtest();
         Assertions.assertEquals(34, result);
-        integerFindMaxNumbers.printMax();
     }
 
     @Test
     public void ThirdNumberIsMax_ReturnSame() {
-        FindMaxNumber<Integer> integerFindMaxNumbers = new FindMaxNumber<Integer>();
-        Integer result = integerFindMaxNumbers.Maxtest(32, 33, 34);
+        FindMaxNumber<Integer>integerFindMaxNumber= new FindMaxNumber<Integer>(32,33,35);
+        Integer result = integerFindMaxNumber.Maxtest();
         Assertions.assertEquals(34, result);
-        integerFindMaxNumbers.printMax();
     }
 
     @Test
     public void Float_FirstNumberIsMax_ReturnSame() {
-        FindMaxNumber<Float> floatFindMaxNumbers = new FindMaxNumber<Float>();
-        Float result = floatFindMaxNumbers.Maxtest(35.2f, 33.2f, 32.2f);
+        FindMaxNumber<Float>floatFindMaxNumber= new FindMaxNumber<Float>(35.2f,32.3f,33.2f);
+        Float result = floatFindMaxNumber.Maxtest();
         Assertions.assertEquals(35.2f, result);
-        floatFindMaxNumbers.printMax();
     }
 
     @Test
     public void Float_ThirdNumberIsMax_ReturnSame() {
-        FindMaxNumber<Float> floatFindMaxNumbers = new FindMaxNumber<Float>();
-        Float result = floatFindMaxNumbers.Maxtest(32.2f, 33.2f, 35.2f);
+        FindMaxNumber<Float>floatFindMaxNumber= new FindMaxNumber<Float>(33.2f,35.3f,32.2f);
+        Float result = floatFindMaxNumber.Maxtest();
         Assertions.assertEquals(5.2f, result);
-        floatFindMaxNumbers.printMax();
     }
 
     @Test
     public void Float_SecondNumberIsMax_ReturnSame() {
-        FindMaxNumber<Float> floatFindMaxNumbers = new FindMaxNumber<Float>();
-        Float result = floatFindMaxNumbers.Maxtest(33.2f, 35.2f, 32.2f);
+        FindMaxNumber<Float>floatFindMaxNumber= new FindMaxNumber<Float>(33.2f,32.3f,35.2f);
+        Float result = floatFindMaxNumber.Maxtest();
         Assertions.assertEquals(35.2f, result);
-        floatFindMaxNumbers.printMax();
     }
 
     @Test
     public void String_FirstStringIsMax_ReturnSame() {
-        FindMaxNumber<String> stringFindMaxNumbers = new FindMaxNumber<String>();
-        String result = stringFindMaxNumbers.Maxtest("PineApple", "Mango", "Grapes");
+        FindMaxNumber<String>StringFindMaxNumber= new FindMaxNumber<String>("PineApple", "Mango", "Grapes");
+        String result = StringFindMaxNumber.Maxtest();
         Assertions.assertEquals("Grapes", result);
-        stringFindMaxNumbers.printMax();
     }
 
     @Test
     public void String_SecondStringIsMax_ReturnSame() {
-        FindMaxNumber<String> stringFindMaxNumbers = new FindMaxNumber<String>();
-        String result = stringFindMaxNumbers.Maxtest("Mango", "PineApple", "Grapes");
+        FindMaxNumber<String>StringFindMaxNumber= new FindMaxNumber<String>("Mango", "PineApple", "Grapes");
+        String result = StringFindMaxNumber.Maxtest();
         Assertions.assertEquals("Grapes", result);
-        stringFindMaxNumbers.printMax();
+
     }
 
     @Test
     public void String_ThirdStringIsMax_ReturnSame() {
-        FindMaxNumber<String> stringFindMaxNumbers = new FindMaxNumber<String>();
-        String result = stringFindMaxNumbers.Maxtest("Grapes", "Mango", "PineApple");
+        FindMaxNumber<String>StringFindMaxNumber= new FindMaxNumber<String>("Grapes", "Mango", "PineApple");
+        String result = StringFindMaxNumber.Maxtest();
         Assertions.assertEquals("Grapes", result);
-        stringFindMaxNumbers.printMax();
+
     }
 
 }
